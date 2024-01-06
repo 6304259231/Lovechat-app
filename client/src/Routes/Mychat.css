@@ -1,0 +1,68 @@
+.main-chat-section {
+    height: 800px;
+    width: 90%;
+    overflow-x: hidden;
+    margin: 20px auto;
+    background-image: #ffff;
+    background-size: cover;
+    box-shadow: 5px 5px 9px black;
+}
+.chat-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.message-section {
+    box-shadow: 4px 5px 10px black;
+    width: 100%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.user-avatar-section {
+    width: 40px;
+    height: 45px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.user-avatar-section img {
+    width: 100%;
+    object-fit: fill;
+    height: auto;
+    border-radius: 50%;
+    border: 1px inset tomato;
+    margin-top: 0px;
+}
+
+@media only screen and (max-width : 740px) {
+    .main-chat-section{
+        min-width: 100%;
+        max-width: 100%;
+        margin: 20px 5px;
+    }
+    .message-section {
+        min-width: 100%;
+        margin-left: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+       
+    }
+    .current-user{
+        min-width: 80%;
+        max-width: 100%;
+    }
+    .post-message-section{
+        max-width: 100%;
+        min-width: 100%;
+    }
+    .message-section .card{
+        font-size: 12px;
+    }
+    .send-btn{
+        padding: 2px;
+        margin: 2px;
+        width: 10%;
+    }
+}

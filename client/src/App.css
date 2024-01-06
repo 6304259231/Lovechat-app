@@ -1,0 +1,10 @@
+body{
+    width: 100%;
+    background-image: url("../public/images/love_chat.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  *{
+    box-sizing: border-box;
+  }
+  

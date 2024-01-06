@@ -1,0 +1,13 @@
+
+@media only screen and (max-width : 740px) {
+    .network-section{
+     width: 100% !important;
+    }
+    .current-user{
+     margin: 8px 10px;
+     margin-left: 12px !important;
+     width: 85% !important;
+     margin-right: 5px !important;
+    }
+ }
+ 

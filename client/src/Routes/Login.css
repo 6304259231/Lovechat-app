@@ -1,0 +1,11 @@
+
+@media only screen and (max-width : 740px) {
+    .register-section{
+        max-width: 95%;
+    }
+    form .form-floating{
+        min-width: 85% !important;
+        max-width: 90%;
+    }
+
+}

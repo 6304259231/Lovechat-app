@@ -1,0 +1,71 @@
+.avatar-section {
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.avatar-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: fill;
+
+}
+
+.avatar-item {
+    display: inline-block;
+    margin: 4px 20px;
+    padding: 20px;
+    width: 180px;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.avatar-item:hover {
+    transform: scale(1.2);
+}
+
+.avatar-item:active {
+    transform: scale(1.0);
+}
+
+.avatar-item-select{
+    margin: 30px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border : 3px inset rgb(181, 4, 4);
+}
+.avatar-item-select img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: fill;
+}
+
+@media only screen and (max-width : 740px) {
+    .register-section{
+        text-align: left;
+        min-width: 96%;
+    }
+    form .form-floating{
+        min-width: 92% !important;
+        max-width: 100%;
+    }
+    .avatar-item {
+        display: inline-block;
+        margin: 4px 3px;
+        padding: 8px;
+        width: 100px;
+        height: 100px;
+    }
+    .avatar-item-select{
+        width: 110px;
+        height: 110px;
+        margin: 20px 1px;
+    }
+}

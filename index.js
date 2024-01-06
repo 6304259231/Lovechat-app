@@ -4,17 +4,11 @@ import mongoose from 'mongoose';
 import jwt from 'jsonwebtoken'
 import bodyParser from 'body-parser';
 import compression from 'compression';
-import path from 'path/posix';
+
 
 let port = 5600;
 let uri = "mongodb+srv://vishnumothukuru:Vittuvishnujob123@cluster0.1ewxygz.mongodb.net/Love_chatretryWrites=true&w=majority";
 let app = express();
-
-app.use(express.static(path.join(__dirname , './client/build')))
-
-app.get('*',(req,res)=>{
-    res.sendFile(path.join(__dirname , './client/build/index.html'))
-})
 app.use(compression());
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({
